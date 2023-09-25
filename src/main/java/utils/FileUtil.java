@@ -10,37 +10,6 @@ import java.util.List;
  * @Date 2023/9/22
  */
 public class FileUtil {
-//    /**
-//     * 传入文件绝对路径，读出txt文件，将文件内容转化为String字符串输出
-//     *
-//     * @param textPath 文件路径
-//     * @return 文件内容
-//     */
-//    public static String readFromText(String textPath) {
-//        //文件返回内容--字符串
-//        String s = "";
-//        String strLine;
-//        // 将 txt文件按行读入s中
-//        File file = new File(textPath);
-//        //文件输入流
-//        FileInputStream fileInputStream = null;
-//        try {
-//            fileInputStream = new FileInputStream(file);
-//            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8");
-//            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-//            // 字符串拼接
-//            while ((strLine = bufferedReader.readLine()) != null) {
-//                s += strLine;
-//            }
-//            // 关闭所有资源
-//            inputStreamReader.close();
-//            bufferedReader.close();
-//            fileInputStream.close();
-//        } catch (IOException e) {
-//            System.out.println("读取文件内容失败！");
-//        }
-//        return s;
-//    }
 
     /**
      * 将结果写入Exercises.txt文件
