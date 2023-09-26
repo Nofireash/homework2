@@ -13,13 +13,12 @@ public class Main {
         Expression expression = new ExpressionImpl();
         Calculate calculate = new CalculateImpl();
         String answerTemp;
-        List<String> expression1 = expression.createExpression(10, 10);
+        List<String> expression1 = expression.createExpression(10000, 10);
         List<String> answerList = new ArrayList<>();
         expression.writeToFile("Exercises.txt");
         for (String s : expression1) {
-            answerTemp = "";
             String result = calculate.calculate(s);
-            answerTemp = s + " = " + result;
+            answerTemp = s + " =" + result;
             System.out.println(answerTemp);
             answerList.add(answerTemp);
         }
